@@ -18,6 +18,7 @@ public class Events extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
+	private JButton btnEnviar;
 
 	/**
 	 * Launch the application.
@@ -40,38 +41,36 @@ public class Events extends JFrame {
 	 */
 	public Events() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 349, 99);
+		setBounds(100, 100, 462, 99);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnPulsar = new JButton("Enviar");
-		btnPulsar.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent arg0) {
-			}
-		});
-		btnPulsar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			
-			
-			}
-		});
-		btnPulsar.setBounds(248, 16, 75, 28);
-		contentPane.add(btnPulsar);
+	
 		
 		//Campo de texto donde el usuario escribe un texto que se mostrará en una ventana
-		textField = new JTextField( "Escriba el texto aqui" );
-		textField.setBounds(10, 16, 228, 28);
+		textField = new JTextField( "Escriba el texto aqui y pulsa ENTER para probar" );
+		textField.setBounds(10, 16, 281, 28);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		// registra los manejadores de eventos
+		// registra los manejadores de eventos del campo de texto
 		  ManejadorCampoTexto manejadorT = new ManejadorCampoTexto();
 		  textField.addActionListener( manejadorT );	 
+		
+		  
+		  //Boton enviar
+		  JButton btnEnviar = new JButton("Pulsar");
 		 
+		  //Registra los manejadores de eventos
+		  ManejadorEventosBot manejadorB = new ManejadorEventosBot();
+		  
+		  
+		  btnEnviar.setBounds(361, 16, 75, 28);
+			contentPane.add(btnEnviar);
 	
+			btnEnviar.addActionListener(manejadorB);
 	}//Fin constructor eventos
 
 	// Esta es una clase interna privada para el manejo de eventos del campo de texto
@@ -87,7 +86,17 @@ public class Events extends JFrame {
 	  evento.getActionCommand() );
 	// muestra el contenido del objeto JTextField
 	   JOptionPane.showMessageDialog( null, cadenaTexto );
-	 
+	 }
+	    }
+	   //CLASE interna privada para el manejador de eventos del boton
+	   private class ManejadorEventosBot implements ActionListener
+	   {
+		   //maneja eventos de botón
+		   public void actionPerformed (ActionEvent eventoB){
+			   JOptionPane.showMessageDialog( Events.this, String.format("Has presionado el boton.\n Hoy vas a tener un feliz día \n           "
+			   		+ "               :)", eventoB) ); 
+		   
+	  
 	 }
   }
 }
