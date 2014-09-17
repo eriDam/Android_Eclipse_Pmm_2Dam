@@ -31,6 +31,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// cuando se realice un click sobre el botón haremos que cambie el texto
 				boton.setText("Pulsado");
+				boton.setBackgroundColor(TRIM_MEMORY_BACKGROUND);
 			}
 			
 		}
