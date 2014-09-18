@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+	<!--- Los strings son variables con 1 nombre y un valor  
+		  Se realiza la definicion a traves de string para q sea 
+		  mas accesible para cambiar despues desde el main activity-->
+   
     <string name="app_name">DondeEsta</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="mapa_loc">Buscar mapa</string>
     <string name="texto_preg">¿Dónde quieres ir?</string>
-    <string name="escribe_lugar">Escribe aqui el lugar</string>
+    <string name="escribe_lug">Escribe aquí el lugar</string>
 
 </resources>
