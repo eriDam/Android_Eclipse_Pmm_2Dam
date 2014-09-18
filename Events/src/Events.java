@@ -73,6 +73,8 @@ public class Events extends JFrame {
 			btnEnviar.addActionListener(manejadorB);
 	}//Fin constructor eventos
 
+	
+	
 	// Esta es una clase interna privada para el manejo de eventos del campo de texto
 	 private class ManejadorCampoTexto implements ActionListener
 	 {
@@ -93,8 +95,10 @@ public class Events extends JFrame {
 	   {
 		   //maneja eventos de botón
 		   public void actionPerformed (ActionEvent eventoB){
-			   JOptionPane.showMessageDialog( Events.this, String.format("Has presionado el boton.\n Hoy vas a tener un feliz día \n           "
-			   		+ "               :)", eventoB) ); 
+//			   JOptionPane.showMessageDialog( Events.this, String.format("Has presionado el boton.\n Hoy vas a tener un feliz día \n           "
+//			   		+ "               :)", eventoB) ); 
+			   JOptionPane.showMessageDialog( Events.this, String.format("Has presionado el boton.\n \"Hoy vas a tener un feliz día\" \n "
+					   + "          :)" + "   \nHas escrito: "+textField.getText(), eventoB) );
 		   
 	  
 	 }
