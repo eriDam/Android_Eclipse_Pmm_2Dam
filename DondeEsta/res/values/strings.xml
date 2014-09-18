@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DondeEsta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mapa_loc">Buscar mapa</string>
+    <string name="texto_preg">¿Dónde quieres ir?</string>
+    <string name="escribe_lugar">Escribe aqui el lugar</string>
+
+</resources>
