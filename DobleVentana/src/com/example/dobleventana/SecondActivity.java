@@ -1,47 +1,26 @@
-package com.example.lanzarmapa;
+package com.example.dobleventana;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.content.Intent;
-import android.net.Uri;
 
-
-public class MainActivity extends Activity {
+public class SecondActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		
-		//Creo un nuevo boton, cojemos del recurso boton1 y lo almacenamos en la variable de tipo button
-		final Button boton = (Button) findViewById(R.id.button1);
-		
-		//Añado un nuevo listener
-		boton.setOnClickListener(new Button.OnClickListener(){
-		
-
-			@Override
-			public void onClick(View v) {
-				//Para intentar lanzar un nuevo activity, se utiliza la clase Intent
-				Intent mapa = new Intent(
-						android.content.Intent.ACTION_VIEW,
-						Uri.parse("geo:0,0?q=Blasco+Ibañez+Valencia+España")
-						);
-				startActivity(mapa);
-			}
+		setContentView(R.layout.activity_second);
 		}
-	);
-	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.second, menu);
 		return true;
 	}
 
