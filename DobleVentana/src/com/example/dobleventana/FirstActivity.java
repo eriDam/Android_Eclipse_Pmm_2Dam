@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class FirstActivity extends Activity {
 	//Declaramos la etiqueta y el texto a mostrar
@@ -20,10 +21,15 @@ public class FirstActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//Creo los elementos de la pantalla gráfica
 		//Cojemos del recurso boton1 y lo almacenamos en la variable de tipo button
 		final Button comprobar = (Button) findViewById(R.id.button1);
-		
-		//Añado un nuevo listener
+		final EditText editText1User=(EditText)findViewById(R.id.editText1);
+		final EditText editText2Passw=(EditText)findViewById(R.id.editText2);
+		 		
+				
+				//Añado un nuevo listener
 		comprobar.setOnClickListener(new Button.OnClickListener(){
 		
 
@@ -36,6 +42,11 @@ public class FirstActivity extends Activity {
 						FirstActivity.this, //Utilizamos this como en java para pasarle como primer parametro quien esta llamando(First activity que hereda de activity)			
 						SecondActivity.class//Y en  la segunda le pasamos a quien está llamando
 						);
+				//En el intent se intenta enviar la información de la primera ventana
+				//Se utilizan pares de nombre y valor, el nombre será usuario y contras y cogeremos el texto que se haya introducido
+				//A través del método putExtra podemos poner información básica no muy extensa
+				abre2.putExtra("usuario", editText1User.getText().toString());
+				abre2.putExtra("pass", editText2Passw.getText().toString());
 				startActivity(abre2);
 			}
 		}

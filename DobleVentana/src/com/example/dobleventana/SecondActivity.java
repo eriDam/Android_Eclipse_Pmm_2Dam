@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SecondActivity extends Activity {
 
@@ -17,6 +18,19 @@ public class SecondActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second);
+		
+		//Para coger la informacion de la primera ventana primero capturamos el intent
+		Intent primera= getIntent();
+		
+		//Rescuperando y colocando la información de cada uno de los datos
+		final TextView editText1User=(TextView)findViewById(R.id.textView2);
+		final TextView editText2Passw=(TextView)findViewById(R.id.textView4);//En realidad es el textView4 pero eclipse me lo saca de título así que están cammbiados
+		
+		//Colocamos la información
+		editText1User.setText(primera.getStringExtra("usuario"));
+		editText2Passw.setText(primera.getStringExtra("pass"));
+		
+		
 		//El Log es la herra<mienta para poder controlar o hacer debug de nuestra app
 		//Incorporamos el Log al final de cada método de la actividad de android
 		Log.i(TAG, "onCreate");
