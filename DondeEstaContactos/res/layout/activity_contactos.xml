@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dondeestacontactos.Contactos" >
+
+    <Button
+        android:id="@+id/bLaGuardia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/bLaGuardia" />
+
+    <Button
+        android:id="@+id/bBilbaoMus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bLaGuardia"
+        android:layout_below="@+id/bLaGuardia"
+        android:layout_marginTop="14dp"
+        android:text="@string/bBilbaoMus" />
+
+    <Button
+        android:id="@+id/bZarautz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bBilbaoMus"
+        android:layout_below="@+id/bBilbaoMus"
+        android:layout_marginTop="20dp"
+        android:text="@string/bZarautz" />
+
+    <Button
+        android:id="@+id/bGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bZarautz"
+        android:layout_below="@+id/bZarautz"
+        android:layout_marginTop="20dp"
+        android:text="@string/bGet" />
+
+    <Button
+        android:id="@+id/bSanS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bGet"
+        android:layout_below="@+id/bGet"
+        android:layout_marginTop="18dp"
+        android:text="@string/bSanS" />
+
+</RelativeLayout>

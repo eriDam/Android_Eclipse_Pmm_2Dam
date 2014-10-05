@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        - Los strings son variables con 1 nombre y un valor  
+		  Se realiza la definicion a traves de string para q sea 
+		  mas accesible para cambiar despues desde el main activity
+    -->
+    <string name="app_name">DondeEstaContactos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="introduceL">Introduce Lugar o dirección</string>
+    <string name="editTextLugar" />
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnCopiar">Copiar desde Contactos</string>
+    <string name="title_activity_contactos">Contactos</string>
+    <string name="bLaGuardia">La Guardia - Rioja</string>
+    <string name="bBilbaoMus">Bilbao - Museo</string>
+    <string name="bZarautz">Zarautz - Costa</string>
+    <string name="bGet">Getárea - Costa</string>
+    <string name="bSanS">San Sebastián</string>
+
+</resources>
