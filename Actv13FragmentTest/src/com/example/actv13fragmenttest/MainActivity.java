@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 		FragmentTransaction fragmentTransaction = fragmentManager
 				.beginTransaction(); /** Con beginTransaction comenzamos a utilizarlo*/
 		
-		/**  */
+		 
 		fragmentTransaction.add(R.id.sup, new Sup()); /** Añadimos de forma dinámica 1 nuevo fragment de la clase Sup */
 		fragmentTransaction.add(R.id.inf, new Inf()); /** Añadimos de forma dinámica 1 nuevo fragment de la clase Inf */
 		fragmentTransaction.commit(); /** Una vez añadido aplicamos los cambios */

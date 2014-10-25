@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="85dp"
         android:text="@string/hello_world"
-        android:textSize="30" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/button1"
@@ -25,6 +25,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="162dp"
-        android:text="Button" />
+        android:text="@string/btn" />
 
 </RelativeLayout>
