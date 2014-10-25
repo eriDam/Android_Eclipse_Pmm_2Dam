@@ -64,7 +64,7 @@ public class FirstActivity extends Activity {
 				Log.w(TAG, "Mensaje de Advertencia - Warn");
 	}
 
-	//Método que 
+	//Método que me permite recoger los datos de la ventana
 	protected void onActivityResult(int requestCode, int resultCode, Intent data){
 		
 			final TextView comprobado=(TextView) findViewById(R.id.textView3);

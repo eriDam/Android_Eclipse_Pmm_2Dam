@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 	
-		/*Elementos de la pantalla gráfica:  Creo unos nuevos botónes y el campo de texto de donde se 
+		/*Elementos de la pantalla gráfica:  Creo unos nuevos botones y el campo de texto de donde se 
 		 * cogerá la dirección a buscar de nuestra pantalla. Cojemos del recurso boton1 y lo almacenamos
 		 * en la variable de tipo button
 		 *findViewById lo necesitamos para encontrar el elemento*/
@@ -36,9 +36,9 @@ public class MainActivity extends Activity {
 					@Override
 					public void onClick(View v) {
 						
-						//Para intentar lanzar un nuevo activity, se utiliza la clase Intent
+						//Se utiliza la clase intent para intentar lanzar un nuevo activity
 						Intent mapa = new Intent(
-								android.content.Intent.ACTION_VIEW,
+								android.content.Intent.ACTION_VIEW,//Visualizar los datos al usuario. Esta es la acción más común. 
 								Uri.parse("geo:0,0?q= ("+textFieldLugar.getText()+")")//la direccion la cogerá mediante getText() del campo de texto
 								);
 							startActivity(mapa);		
@@ -59,7 +59,6 @@ public class MainActivity extends Activity {
 								Contactos.class//Y en  la segunda le pasamos a quien está llamando
 								);
 						//En el intent se intenta enviar la información de la primera ventana
-						//Se utilizan pares de nombre y valor, el nombre será usuario y contras y cogeremos el texto que se haya introducido
 						//A través del método putExtra podemos poner información básica no muy extensa
 						abreContactos.putExtra("Lugar", textFieldLugar.getText().toString());
 					 
@@ -69,8 +68,9 @@ public class MainActivity extends Activity {
 					}
 				}
 			);
-				//El Log es la herramienta para poder controlar o hacer debug de nuestra app
-			    //no son mas que la lectura de lo que va pasando en nuestra aplicación.
+				/*El Log es la herramienta para poder controlar o hacer debug de nuestra app
+			    *no son mas que la lectura de lo que va pasando en nuestra aplicación. Y muestra el mensaje
+				*que le queramos poner o el que emita el método*/
 				//Incorporamos el Log al final de cada método de la actividad de android
 				Log.i(TAG, "on create");
 				Log.d(TAG, "Debug");
@@ -79,14 +79,15 @@ public class MainActivity extends Activity {
 				Log.w(TAG, "Mensaje de Advertencia - Warn");
 	}
 	
-	//Creamos método para recoger los datos de la segunda actividad
+			//Creamos método para recoger los datos de la segunda actividad
 			protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+				
 				//creamos variable de TextView (la misma que metemos en el boton buscar)
 				final EditText lugar=(EditText) findViewById(R.id.editText1Lugar);
 				//Hacemos la lógica para que aparezca el string que mandamos de la segunda actividad
 			    if (requestCode == 1) {
 			        if(resultCode == RESULT_OK){
-			            String resultado=data.getStringExtra("Lugar");
+			            String resultado=data.getStringExtra("Lugar");//
 			            lugar.setText(resultado);
 			        }
 			        if (resultCode == RESULT_CANCELED) {
