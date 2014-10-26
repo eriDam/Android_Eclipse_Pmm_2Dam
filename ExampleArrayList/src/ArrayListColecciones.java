@@ -19,7 +19,7 @@ public class ArrayListColecciones {
 		 * con las llaves definimos*/
 		ArrayList <String> lista = new ArrayList <String>();
 		
-		/** Utilizamos un for diferente, para agregar loselementos en el arreglo colores a la lista
+		/** Utilizamos un for diferente, para agregar los elementos en el arreglo colores a la lista
 		 * dentro de colores, para cada color lo metemos en la variable creada color*/
 		for( String color : colores ) lista.add( color );
 		/** Para cada string color denro de lista vamos a imprimirlo*/
