@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Actv15ListarTexto</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="colors">
+        <item >amarillo</item>
+        <item >rojo</item>
+        <item >azul</item>
+        <item >verde</item>
+        <item >gris</item>
+        <item >naranja</item>
+        <item >negro</item>
+    </string-array>
+
+</resources>

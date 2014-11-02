@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blueIndigo">#0000FF</color>
+    <color name="blue500">#5677fc</color>
+    <color name="blue300">#91a7ff</color>
+    <color name="blue_ligth900">#01579b</color>
+    <color name="blue_ligth500">#03a9f4</color>
+    <color name="blue_ligth300">#4fc3f7</color>
+    <color name="blue_ligth200">#81d4fa</color>
+    <color name="blue_ligth50">#e1f5fe</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+    <color name="NARANJA">#F28220</color>
+    <color name="MORADO">#C733C9</color>
+    <color name="PISTACHO">#C0D787</color>
+    <color name="ROJO">#DE0814</color>
+    <color name="ROSA">#E13157</color>
+    <color name="SALMON">#FA8071</color>
+    <color name="VVIVO">#7EF40A</color>
+    <color name="AMARILLO">#FCFA36</color>
+    <color name="CELESTE">#ADDBD9</color>
+    <color name="COBALTO">#0C23B1</color>
+</resources>
