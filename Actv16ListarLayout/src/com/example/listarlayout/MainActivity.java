@@ -16,7 +16,7 @@ public class MainActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState); 
 		
-		/**Creo el array aquí
+		/**Creo el array aquí en lugar de en strings
 		 * */
 	String[] so = {"Android", "Iphone", "windowsMobile", 
 			"Blackberry","WebOs", "Windows7","Max OS X",
