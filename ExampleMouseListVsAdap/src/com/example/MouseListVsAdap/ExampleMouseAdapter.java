@@ -46,7 +46,9 @@ public class ExampleMouseAdapter extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		/** Añadimos el addmouseListener que es una funcion de JFrame*/
+		/** Añadimos el addmouseListener que es una funcion de JFrame
+		 * No es necesario implemetar todos, solo sobreescribir @override
+		 *  aquellos que vaya a usar*/
 		addMouseListener (new EscucharMouse());
 	}
 	

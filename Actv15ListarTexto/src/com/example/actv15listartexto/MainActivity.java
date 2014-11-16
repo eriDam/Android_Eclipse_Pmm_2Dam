@@ -13,7 +13,7 @@ public class MainActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.activity_main); Esta linea se debe quitar, no es necesaria en ListActivity
-		/**
+		/**Un ListView es un grupo de Views, puede tener scrolls y se podrá buscar.
 		 * Utilizamos el setListAdapter para colocar los datos que queremos dentro
 		 * del listView, se utiliza un new arrayAdapter para introducir objetos dentro de 
 		 * listView, será de strings que es el tipo que hemos definido, coloco this, para colocarlo en este contexto en el
