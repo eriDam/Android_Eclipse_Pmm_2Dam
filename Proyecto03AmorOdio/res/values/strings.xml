@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Proyecto03AmorOdio</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">action_settings</string>
+    <string name="item_elegido">Item elegido AMOR-ODIO</string>
+	<string name="listV"></string> 
+	<string name="editTextSo">Saldrá tu sistema seleccionado</string>
+</resources>
